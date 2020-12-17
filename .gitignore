@@ -427,3 +427,6 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+# Example puzzle inputs
+**/*.sample

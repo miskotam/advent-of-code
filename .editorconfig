@@ -15,7 +15,7 @@ trim_trailing_whitespace = true
 max_line_length = 150
 
 # IDE0055: Fix formatting
-dotnet_diagnostic.IDE0055.severity = error
+dotnet_diagnostic.IDE0055.severity = warning
 
 # Organize usings
 dotnet_sort_system_directives_first = true
@@ -65,14 +65,14 @@ dotnet_naming_symbols.constants.applicable_kinds = field, local
 dotnet_naming_symbols.constants.required_modifiers = const
 dotnet_naming_style.constant_style.capitalization = pascal_case
 
-# Static fields are camelCase and start with s_
+# Static fields are camelCase and start with _
 dotnet_naming_rule.static_fields_should_be_camel_case.severity = warning
 dotnet_naming_rule.static_fields_should_be_camel_case.symbols = static_fields
 dotnet_naming_rule.static_fields_should_be_camel_case.style = static_field_style
 dotnet_naming_symbols.static_fields.applicable_kinds = field
 dotnet_naming_symbols.static_fields.required_modifiers = static
 dotnet_naming_style.static_field_style.capitalization = camel_case
-dotnet_naming_style.static_field_style.required_prefix = s_
+dotnet_naming_style.static_field_style.required_prefix = _
 
 # Instance fields are camelCase and start with _
 dotnet_naming_rule.instance_fields_should_be_camel_case.severity = warning
