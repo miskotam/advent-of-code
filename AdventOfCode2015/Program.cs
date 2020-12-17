@@ -6,7 +6,7 @@ using GlobalUtils;
 namespace AdventOfCode2015 {
     public class Program {
         private static readonly int _year = 2015;
-        private static readonly int _day = 2;
+        private static readonly int _day = 3;
         private static readonly InputLoader _inputLoader = new InputLoader(_year);
         private static readonly Utils _utils = new Utils();
 
@@ -15,6 +15,7 @@ namespace AdventOfCode2015 {
         private static readonly List<DayProgram> _days = new List<DayProgram> {
             new Day01.Puzzle().Solve,
             new Day02.Puzzle().Solve,
+            new Day03.Puzzle().Solve,
         };
 
         private static void Main() {
