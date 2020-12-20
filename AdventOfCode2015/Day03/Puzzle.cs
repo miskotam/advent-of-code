@@ -1,7 +1,8 @@
 using System.Collections.Generic;
 
 namespace AdventOfCode2015.Day03 {
-    public class Puzzle {
+    public class Puzzle : IPuzzle {
+        public bool SampleMode => false;
         public (object, object) Solve(List<string> input) {
             var part1 = Part1(input);
             var part2 = Part2(input);

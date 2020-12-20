@@ -3,7 +3,9 @@ using System.Security.Cryptography;
 using System.Text;
 
 namespace AdventOfCode2015.Day04 {
-    public class Puzzle {
+    public class Puzzle : IPuzzle {
+        public bool SampleMode => false;
+
         public (object, object) Solve(List<string> input) {
             object part1 = CalculateHashSuffix("00000", input[0]);
             object part2 = CalculateHashSuffix("000000", input[0]);

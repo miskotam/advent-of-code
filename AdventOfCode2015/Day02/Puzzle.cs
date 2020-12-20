@@ -2,7 +2,9 @@ using System.Collections.Generic;
 using System.Linq;
 
 namespace AdventOfCode2015.Day02 {
-    public class Puzzle {
+    public class Puzzle : IPuzzle {
+        public bool SampleMode => false;
+
         public (object, object) Solve(List<string> input) {
             object part1 = input.Sum(row => {
                 var sideLengths = row.Split('x').Select(int.Parse).ToArray();
