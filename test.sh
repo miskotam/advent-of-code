@@ -1,0 +1,1 @@
+dotnet test -v n Test/AdventOfCode"$1"Test/AdventOfCode"$1"Test.csproj

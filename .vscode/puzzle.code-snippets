@@ -20,10 +20,10 @@
         "body": [
             "using System.Collections.Generic;",
             "",
-            "namespace AdventOfCode$1.Day$2 : IPuzzle {",
-            "    public bool SampleMode => false;",
+            "namespace AdventOfCode$1.Day$2 {",
+            "    public class Puzzle : IPuzzle {",
+            "        public bool SampleMode => false;",
             "",
-            "    public class Puzzle {",
             "        public (object, object) Solve(List<string> input) {",
             "            object part1 = null;",
             "            object part2 = null;",

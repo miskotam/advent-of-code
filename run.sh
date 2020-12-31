@@ -1,0 +1,1 @@
+dotnet run --project AdventOfCode"$1"/AdventOfCode"$1".csproj
