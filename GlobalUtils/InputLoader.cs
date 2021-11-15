@@ -11,7 +11,10 @@ namespace GlobalUtils {
         public InputLoader(int year) => Year = year;
 
         public List<string> ReadInput(int day, bool sample = false) {
-            var basePath = $"AdventOfCode{Year}\\Day{day:D2}";
+            var basePath = $"Day{day:D2}";
+            if (!Directory.Exists(basePath))
+                basePath = $"AdventOfCode{Year}\\Day{day:D2}";
+
             var inputPath = $"{basePath}\\day{day:D2}.in";
             var samplePath = $"{basePath}\\day{day:D2}.sample";
 

@@ -5,9 +5,9 @@ using GlobalUtils;
 namespace AdventOfCode2015 {
     public class Program {
         private static readonly int _year = 2015;
-        private static readonly int _day = 8;
+        private static readonly int _day = 9;
         private static readonly InputLoader _inputLoader = new(_year);
-        private static readonly Utils _utils = new();
+        private static readonly ClipboardUtils _clipBoardUtils = new();
 
         private static readonly List<IPuzzle> _days = new() {
             new Day01.Puzzle(),
@@ -18,13 +18,14 @@ namespace AdventOfCode2015 {
             new Day06.Puzzle(),
             new Day07.Puzzle(),
             new Day08.Puzzle(),
+            new Day09.Puzzle(),
         };
 
         private static void Main() {
             var puzzle = _days[_day - 1];
             var input = _inputLoader.ReadInput(_day, puzzle.SampleMode);
             var result = puzzle.Solve(input);
-            _utils.CopyToClipBoard(result.Item2 ?? result.Item1);
+            _clipBoardUtils.CopyToClipBoard(result.Item2 ?? result.Item1);
             Console.WriteLine(result);
         }
     }
