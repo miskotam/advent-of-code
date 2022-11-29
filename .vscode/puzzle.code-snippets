@@ -19,6 +19,7 @@
         "prefix": "aoc-puzzle",
         "body": [
             "using System.Collections.Generic;",
+            "using GlobalUtils;",
             "",
             "namespace AdventOfCode$1.Day$2 {",
             "    public class Puzzle : IPuzzle {",

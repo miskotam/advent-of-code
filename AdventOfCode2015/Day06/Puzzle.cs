@@ -2,6 +2,7 @@ using System.Linq;
 using System.Text.RegularExpressions;
 using System;
 using System.Collections.Generic;
+using GlobalUtils;
 
 namespace AdventOfCode2015.Day06 {
     public class Puzzle : IPuzzle {

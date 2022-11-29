@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using GlobalUtils;
 
 namespace AdventOfCode2015.Day03 {
     public class Puzzle : IPuzzle {

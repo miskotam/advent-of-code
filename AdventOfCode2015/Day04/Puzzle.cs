@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Security.Cryptography;
 using System.Text;
+using GlobalUtils;
 
 namespace AdventOfCode2015.Day04 {
     public class Puzzle : IPuzzle {

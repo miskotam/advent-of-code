@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using GlobalUtils;
 
 namespace AdventOfCode2015 {
@@ -22,9 +23,9 @@ namespace AdventOfCode2015 {
             new Day10.Puzzle(),
         };
 
-        private static void Main() {
+        private static async Task Main() {
             var puzzle = _days[_day - 1];
-            var input = _inputLoader.ReadInput(_day, puzzle.SampleMode);
+            var input = await _inputLoader.ReadInput(_day, puzzle.SampleMode);
             var result = puzzle.Solve(input);
             _clipBoardUtils.CopyToClipBoard(result.Item2 ?? result.Item1);
             Console.WriteLine(result);
