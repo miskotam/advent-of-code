@@ -6,6 +6,7 @@ namespace AdventOfCode2022 {
         private static async Task Main() {
             await AoCRunner.Run(new() {
                     new Day01.Puzzle(),
+                    new Day02.Puzzle(),
                 }, 2022);
         }
     }
