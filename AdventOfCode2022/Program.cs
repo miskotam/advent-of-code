@@ -7,6 +7,7 @@ namespace AdventOfCode2022 {
             await AoCRunner.Run(new() {
                     new Day01.Puzzle(),
                     new Day02.Puzzle(),
+                    new Day03.Puzzle(),
                 }, 2022);
         }
     }
