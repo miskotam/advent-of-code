@@ -10,6 +10,7 @@ namespace AdventOfCode2022 {
                     new Day03.Puzzle(),
                     new Day04.Puzzle(),
                     new Day05.Puzzle(),
+                    new Day06.Puzzle(),
                 }, 2022);
         }
     }
