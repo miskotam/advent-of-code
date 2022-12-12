@@ -7,16 +7,14 @@ namespace AdventOfCode2022Test {
 
         private const string Input = "mjqjpqmgbljsphdztnvjfqwrcgsmlb";
 
-        [Fact]
-        public void TestPart1() {
-            var result = new Puzzle().Solve(new List<string> { Input });
-            Assert.Equal(7, result.Item1);
-        }
+        private readonly (object, object) _result;
+
+        public Day06Test() => _result = new Puzzle().Solve(new List<string> { Input });
 
         [Fact]
-        public void TestPart2() {
-            var result = new Puzzle().Solve(new List<string> { Input });
-            Assert.Equal(19, result.Item2);
-        }
+        public void TestPart1() => Assert.Equal(7, _result.Item1);
+
+        [Fact]
+        public void TestPart2() => Assert.Equal(19, _result.Item2);
     }
 }
