@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using GlobalUtils.PathFinding;
 
 namespace GlobalUtils {
     public static class MatrixUtils {
@@ -36,6 +37,15 @@ namespace GlobalUtils {
                     matrix[x, y] = (int)char.GetNumericValue(input[x][y]);
             }
 
+            return matrix;
+        }
+
+        public static Node<K>[,] ToNodeMatrix<T, K>(T input, Func<K, int> costCalculationFunc) where T : IList<K[]> {
+            var matrix = new Node<K>[input.Count, input[0].Length];
+            for (var x = 0; x < input.Count; x++) {
+                for (var y = 0; y < input[x].Length; y++)
+                    matrix[x, y] = new Node<K>(true, x, y, costCalculationFunc(input[x][y]), input[x][y]);
+            }
             return matrix;
         }
 

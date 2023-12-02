@@ -15,11 +15,11 @@ namespace GlobalUtils {
 
             foreach (var row in input) {
                 if (row != groupSeparator) {
-                    _ = stringBuilder.Append($"{groupItemSeparator}{row}");
+                    stringBuilder.Append($"{groupItemSeparator}{row}");
                 }
                 else {
                     concatenatedGroups.Add(stringBuilder.ToString().Trim());
-                    _ = stringBuilder.Clear();
+                    stringBuilder.Clear();
                 }
             }
 
